@@ -37,9 +37,9 @@ const stories: StoryStep[] = [
   {
     badge: 'Momen Spesial',
     title: 'Buket Mawar Biru & Ulang Tahun Kamu 🎂💐',
-    desc: 'Momen ngerayain hari lahir Kharisma Mutia (27 Mei). Kacamata Happy Birthday konyol dan buket mawar biru jadi saksi senyum bahagia kamu yang paling berharga buat aku.',
+    desc: 'Momen ngerayain hari lahir Kharisma Mutia (28 Mei). Kacamata Happy Birthday konyol dan buket mawar biru jadi saksi senyum bahagia kamu yang paling berharga buat aku.',
     icon: <Gift className="w-4 h-4 text-sky-500" />,
-    tag: '27 Mei 2009',
+    tag: '28 Mei 2009',
     color: 'border-[#99E9F2] bg-[#E3FAFC]',
   },
 ];
