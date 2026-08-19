@@ -115,7 +115,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-sm sm:text-base text-cute-subtext leading-relaxed max-w-lg mb-6 font-medium">
-            Selamat datang di web buatan Tino khusus buat kamu. Tempat kumpul foto-foto lucu kita, catatan rasa sayang, dan kupon manja yang bisa kamu klaim kapan aja! 🥰
+            Ruang kecil untuk menyimpan setiap senyum, tawa, dan cerita perjalanan kita berdua. Makasih ya sudah selalu jadi bagian terindah di hidup Tino. 🥰
           </p>
 
           {/* Cute Interactive Gemes Meter */}

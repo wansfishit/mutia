@@ -89,7 +89,7 @@ export const CuteIntroGate: React.FC<CuteIntroGateProps> = ({ onEnter }) => {
             </h1>
 
             <p className="text-xs sm:text-sm text-cute-subtext font-medium leading-relaxed mb-6">
-              Ada kado kecil dan pesan penuh cinta yang Tino buat khusus buat kamu. Buka bareng lagu kesukaan kita yuk! 🥰
+              Ada kumpulan cerita manis dan pesan penuh cinta dari Tino. Buka bareng lagu kesukaan kita yuk! 🥰
             </p>
 
             {/* Action Buttons: Play Music & Enter */}
