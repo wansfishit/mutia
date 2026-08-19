@@ -16,57 +16,57 @@ interface CuteNote {
 const initialNotes: CuteNote[] = [
   {
     id: 1,
-    emoji: '🍓',
-    title: 'Senyum Manis Pas Ketemu',
-    desc: 'Ekspresi ceria kamu yang selalu berseri-seri tiap kali kita ketemu, langsung bikin hari aku jadi bahagia dan penuh semangat.',
+    emoji: '🍜',
+    title: 'Pecandu Mie Garis Keras',
+    desc: 'Sering banget dilarang makan mie mulu demi kesehatan, tapi tetep aja bandel nyuri-nyuri makan wkwk!',
     bgColor: 'bg-[#FFF0F5]',
     borderColor: 'border-[#FFB6C1]',
-    likes: 28,
+    likes: 48,
   },
   {
     id: 2,
-    emoji: '🎀',
-    title: 'Momen Lucu Pas Milih Jajan',
-    desc: 'Suka bingung sendiri pas milih makanan, tapi ujung-ujungnya selalu senang dan lahap kalau udah makan bareng.',
+    emoji: '😴',
+    title: 'Hobi Tidur & Mager Mandi Sore',
+    desc: 'Paling suka tidur dan mager kalau udah disuruh mandi sore, tapi muka ngantuk kamu tetep aja gemesin sedunia.',
     bgColor: 'bg-[#FFF9DB]',
     borderColor: 'border-[#FFE066]',
-    likes: 42,
+    likes: 56,
   },
   {
     id: 3,
-    emoji: '🧸',
-    title: 'Perhatian Kecil yang Hangat',
-    desc: 'Suka tiba-tiba ngingetin makan, nanya kabar, atau cerita hal-hal random yang selalu bikin kangen.',
+    emoji: '🥺',
+    title: 'Momen Manja Pas Lagi Ngambek',
+    desc: 'Kalau lagi ngambek harus langsung dibujuk, dimanjain, dan dibecandain sampai akhirnya kamu gak tahan buat ketawa lagi.',
     bgColor: 'bg-[#F3E8FF]',
     borderColor: 'border-[#D8B4FE]',
-    likes: 35,
+    likes: 62,
   },
   {
     id: 4,
     emoji: '🌸',
-    title: 'Tawa Lepas Mutia',
-    desc: 'Suara ketawa kamu yang renyah pas kita lagi bercanda berdua, selalu jadi musik paling indah buat didenger.',
+    title: 'Panggilan "Saayaaanggg"',
+    desc: 'Cara kamu manggil dengan nada manja yang khas, selalu sukses bikin hati aku adem dan meleleh seketika.',
     bgColor: 'bg-[#FFE8E8]',
     borderColor: 'border-[#FFA8A8]',
-    likes: 50,
+    likes: 70,
   },
   {
     id: 5,
-    emoji: '🍯',
-    title: 'Tempat Curhat Ternyaman',
-    desc: 'Selalu sabar dan ada buat dengerin semua cerita aku, dari yang penting sampai yang receh tanpa pernah bosen.',
+    emoji: '💖',
+    title: 'Kesabaran & Kesetiaan Kamu',
+    desc: 'Walaupun aku sering bikin salah dan buat kamu sedih, kamu selalu punya hati yang luas buat maafin dan tetap setia nemenin aku.',
     bgColor: 'bg-[#EBFBEE]',
     borderColor: 'border-[#B2F2BB]',
-    likes: 39,
+    likes: 85,
   },
   {
     id: 6,
-    emoji: '💖',
+    emoji: '🍯',
     title: 'Definisi Rumah & Kebahagiaan',
-    desc: 'Di hari yang capek sekalipun, ngobrol dan ada di dekat kamu selalu berhasil bikin hati adem dan tenang seketika.',
+    desc: 'Di hari yang capek sekalipun, ngobrol dan ada di dekat kamu selalu berhasil bikin hati tenang dan penuh rasa syukur.',
     bgColor: 'bg-[#E3FAFC]',
     borderColor: 'border-[#99E9F2]',
-    likes: 64,
+    likes: 92,
   },
 ];
 
@@ -91,13 +91,13 @@ export const ThingsILove = () => {
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white border-2 border-pastel-rose/60 text-xs font-bold text-pastel-hot mb-3 shadow-sm animate-bounce-slow">
           <Sparkles className="w-3.5 h-3.5 text-amber-500" />
-          <span>Hal-Hal Kecil Tentang Mutia 🎀</span>
+          <span>Sisi Gemes Tentang Mutia 🎀</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-cute-text mb-2">
-          Kebiasaan Gemes yang <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Bikin Sayang</span> ✨
+          Kebiasaan Unik yang <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Bikin Sayang</span> ✨
         </h2>
         <p className="text-xs sm:text-sm text-cute-subtext font-medium max-w-md mx-auto">
-          Tingkah-tingkah lucu kamu yang selalu bikin aku senyum-senyum sendiri tiap hari!
+          Tingkah-tingkah lucu kamu yang selalu bikin aku senyum dan jatuh hati setiap hari!
         </p>
       </div>
 

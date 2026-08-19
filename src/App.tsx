@@ -3,8 +3,10 @@ import { CuteIntroGate } from './components/CuteIntroGate';
 import { CuteBackground } from './components/CuteBackground';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
+import { OurJourney } from './components/OurJourney';
 import { PhotoDiary } from './components/PhotoDiary';
 import { ThingsILove } from './components/ThingsILove';
+import { CoupleBucketList } from './components/CoupleBucketList';
 import { CoupleVouchers } from './components/CoupleVouchers';
 import { LoveLetter } from './components/LoveLetter';
 import { PlayfulProposal } from './components/PlayfulProposal';
@@ -30,8 +32,14 @@ export function App() {
 
         <main className="space-y-6">
           <HeroSection />
+          <div id="journey">
+            <OurJourney />
+          </div>
           <PhotoDiary />
           <ThingsILove />
+          <div id="bucketlist">
+            <CoupleBucketList />
+          </div>
           <CoupleVouchers />
           <LoveLetter />
           <PlayfulProposal />

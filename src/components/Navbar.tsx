@@ -51,12 +51,18 @@ export const Navbar = () => {
         </button>
 
         {/* Navigation */}
-        <nav className="hidden md:flex items-center gap-5 text-xs font-semibold text-cute-subtext">
+        <nav className="hidden md:flex items-center gap-4 text-xs font-semibold text-cute-subtext">
+          <a href="#journey" className="hover:text-pastel-hot transition-colors flex items-center gap-1">
+            <span>📖 Cerita Kita</span>
+          </a>
           <a href="#gallery" className="hover:text-pastel-hot transition-colors flex items-center gap-1">
-            <span>📸 Foto Kita</span>
+            <span>📸 Foto</span>
           </a>
           <a href="#cute-zone" className="hover:text-pastel-hot transition-colors flex items-center gap-1">
             <span>🎀 Hal Gemes</span>
+          </a>
+          <a href="#bucketlist" className="hover:text-pastel-hot transition-colors flex items-center gap-1">
+            <span>✈️ Impian</span>
           </a>
           <a href="#vouchers" className="hover:text-pastel-hot transition-colors flex items-center gap-1">
             <span>🎟️ Kupon</span>
@@ -80,12 +86,12 @@ export const Navbar = () => {
             {isPlaying ? (
               <>
                 <Disc className="w-4 h-4 animate-spin-cute" />
-                <span className="text-[11px]">Penjaga Hati 🎵</span>
+                <span className="text-[11px]">Musik On 🎵</span>
               </>
             ) : (
               <>
                 <Music className="w-3.5 h-3.5 text-pastel-hot animate-bounce" />
-                <span className="text-[11px]">Putar Penjaga Hati 🎶</span>
+                <span className="text-[11px]">Putar Musik 🎶</span>
               </>
             )}
           </button>

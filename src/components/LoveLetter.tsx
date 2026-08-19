@@ -36,10 +36,10 @@ export const LoveLetter = () => {
       <div className="text-center mb-10">
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white border-2 border-pastel-rose/60 text-xs font-bold text-pastel-hot mb-3 shadow-sm animate-bounce-slow">
           <Mail className="w-3.5 h-3.5" />
-          <span>Surat Cinta Buat Mutia 💌</span>
+          <span>Surat Tulus Dari Hati 💌</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-cute-text mb-2">
-          Pesan Manis Untuk <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Mutia</span> 🌸
+          Pesan Khusus Untuk <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Mutia</span> 🌸
         </h2>
       </div>
 
@@ -61,19 +61,23 @@ export const LoveLetter = () => {
           </p>
 
           <p>
-            Makasih banyak yaa sudah selalu hadir di hidup aku dengan senyuman paling manis dan sifat kamu yang selalu bikin gemes setiap hari.
+            Dari pertama kali aku ngeliat kamu latihan LKBB di sekolah sampai hari ini, rasa kagum dan sayang aku ke kamu gak pernah berkurang sedikitpun.
           </p>
 
           <p>
-            Aku bersyukur banget punya pacar sebaik, sepeduli, dan secantik kamu. Walaupun kadang kita suka debat receh soal mau makan apa (yang ujungnya terserah wkwk), tapi setiap detik bareng kamu selalu jadi momen paling bahagia buat aku.
+            Pertama-tama, aku mau minta maaf yang sebesar-besarnya ya sayang kalau selama ini aku masih sering buat kamu sedih, sering bikin salah, atau belum bisa jadi yang paling sempurna buat kamu. Maaf ya kalau kadang aku bikin kamu kesel atau kepikiran.
           </p>
 
           <p>
-            Tetap jadi Mutia yang ceria, sehat-sehat terus ya Sayang. Semoga kita selalu bahagia berdua dan terus sama-sama sampai selamanya!
+            Tapi di balik semua kekurangan aku, aku bersyukur dan berterima kasih banget karena kamu selalu punya hati yang luar biasa luas. Makasih sudah selalu sabar, tetap setia, dan selalu memilih untuk ada di samping aku melewati setiap cerita.
+          </p>
+
+          <p>
+            Ayo kita berjuang bareng-bareng ya sayang, sukses bareng, sampai nanti kita bisa wujudkan impian kita buat liburan ke Swiss berdua. Aku sayang banget sama kamu, selalu dan selamanya.
           </p>
 
           <div className="pt-4 flex items-center justify-between border-t-2 border-dashed border-pastel-soft text-xs font-bold text-cute-subtext">
-            <span>Dari yang selalu sayang kamu,</span>
+            <span>Dengan segenap rasa sayang &amp; terima kasih,</span>
             <span className="font-cute text-3xl text-pastel-hot font-bold">Tino ❤️</span>
           </div>
         </div>
@@ -94,7 +98,7 @@ export const LoveLetter = () => {
             <textarea
               rows={3}
               required
-              placeholder="Contoh: Makasih ya sayang, aku juga sayang banget sama kamu! 🥰"
+              placeholder="Contoh: Makasih ya sayang, aku udah maafin kamu kok. Aku juga sayang banget sama kamu! 🥰"
               value={replyText}
               onChange={(e) => setReplyText(e.target.value)}
               className="w-full p-3.5 rounded-2xl bg-pastel-soft/50 border-2 border-pastel-rose/50 text-cute-text text-xs sm:text-sm placeholder-cute-subtext/60 focus:outline-none focus:border-pastel-hot"
