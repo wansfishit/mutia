@@ -7,12 +7,14 @@ export const Navbar = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    setIsPlaying(romanticAudio.getIsPlaying());
+    const unsubscribe = romanticAudio.subscribe((playing) => {
+      setIsPlaying(playing);
+    });
+    return unsubscribe;
   }, []);
 
   const toggleMusic = () => {
     const active = romanticAudio.togglePlay();
-    setIsPlaying(active);
     if (active) {
       confetti({
         particleCount: 25,

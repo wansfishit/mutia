@@ -1,8 +1,11 @@
 // Audio Controller for Nadhif Basalamah - Penjaga Hati & Sound FX
+type AudioStateListener = (isPlaying: boolean) => void;
+
 class RomanticAudioEngine {
   private ctx: AudioContext | null = null;
   private isPlaying = false;
   private bgAudio: HTMLAudioElement | null = null;
+  private listeners: Set<AudioStateListener> = new Set();
 
   public tracks = [
     {
@@ -15,10 +18,43 @@ class RomanticAudioEngine {
 
   constructor() {
     if (typeof window !== 'undefined') {
+      this.initAudio();
+    }
+  }
+
+  private initAudio() {
+    if (!this.bgAudio) {
       this.bgAudio = new Audio('/audio/penjaga-hati.mp3');
       this.bgAudio.loop = true;
       this.bgAudio.volume = 0.8;
+
+      this.bgAudio.addEventListener('play', () => {
+        this.isPlaying = true;
+        this.notify();
+      });
+
+      this.bgAudio.addEventListener('pause', () => {
+        this.isPlaying = false;
+        this.notify();
+      });
+
+      this.bgAudio.addEventListener('playing', () => {
+        this.isPlaying = true;
+        this.notify();
+      });
     }
+  }
+
+  public subscribe(listener: AudioStateListener) {
+    this.listeners.add(listener);
+    listener(this.isPlaying);
+    return () => {
+      this.listeners.delete(listener);
+    };
+  }
+
+  private notify() {
+    this.listeners.forEach((fn) => fn(this.isPlaying));
   }
 
   private getContext(): AudioContext {
@@ -79,22 +115,23 @@ class RomanticAudioEngine {
 
   // Start playing Nadhif Basalamah - Penjaga Hati
   playSong() {
-    if (!this.bgAudio) {
-      this.bgAudio = new Audio('/audio/penjaga-hati.mp3');
-      this.bgAudio.loop = true;
-      this.bgAudio.volume = 0.8;
+    this.initAudio();
+    if (this.bgAudio) {
+      this.bgAudio.play().then(() => {
+        this.isPlaying = true;
+        this.notify();
+      }).catch(() => {
+        this.isPlaying = false;
+        this.notify();
+      });
     }
-    this.bgAudio.play().then(() => {
-      this.isPlaying = true;
-    }).catch(() => {
-      this.isPlaying = false;
-    });
   }
 
   pauseSong() {
     if (this.bgAudio) {
       this.bgAudio.pause();
       this.isPlaying = false;
+      this.notify();
     }
   }
 

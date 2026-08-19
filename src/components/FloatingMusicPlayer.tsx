@@ -7,12 +7,15 @@ export const FloatingMusicPlayer = () => {
   const [isPlaying, setIsPlaying] = useState(false);
 
   useEffect(() => {
-    setIsPlaying(romanticAudio.getIsPlaying());
+    // Reactive subscription to audio playback status
+    const unsubscribe = romanticAudio.subscribe((playing) => {
+      setIsPlaying(playing);
+    });
+    return unsubscribe;
   }, []);
 
   const handleToggle = () => {
     const active = romanticAudio.togglePlay();
-    setIsPlaying(active);
     if (active) {
       confetti({
         particleCount: 25,
