@@ -5,12 +5,9 @@ import { romanticAudio } from '../utils/audioSynth';
 
 export const HeroSection = () => {
   const [startDateStr, setStartDateStr] = useState<string>(() => {
-    const saved = localStorage.getItem('tino_mutia_anniversary_v3');
+    const saved = localStorage.getItem('tino_mutia_anniversary_july2024');
     if (saved) return saved;
-    const defaultDate = new Date();
-    defaultDate.setFullYear(defaultDate.getFullYear() - 1);
-    defaultDate.setMonth(defaultDate.getMonth() - 3);
-    return defaultDate.toISOString().split('T')[0];
+    return '2024-07-01';
   });
 
   const [timeTogether, setTimeTogether] = useState({
@@ -56,7 +53,7 @@ export const HeroSection = () => {
 
   const handleSaveDate = () => {
     setStartDateStr(tempDate);
-    localStorage.setItem('tino_mutia_anniversary_v3', tempDate);
+    localStorage.setItem('tino_mutia_anniversary_july2024', tempDate);
     setIsEditing(false);
   };
 
