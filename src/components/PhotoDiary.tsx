@@ -35,9 +35,9 @@ const photoCards: CutePhoto[] = [
   {
     id: '3',
     image: '/photos/IMG_2384.JPG',
-    title: 'Kacamata Konyol 👓',
-    sticker: '🎀',
-    note: 'Foto paling random dan gemesin sedunia! Tingkah konyol kamu yang selalu bikin Tino ketawa lepas.',
+    title: 'Kacamata Ulang Tahun 🎂🎉',
+    sticker: '🎂',
+    note: 'Momen seru ngerayain ulang tahun bareng Mutia! Pakai kacamata Happy Birthday yang gemesin banget, selalu ada kejutan dan tawa tiap bareng kamu. 🥰✨',
     rotation: '-rotate-1',
     tapeColor: 'bg-pastel-lavender/80',
   },
