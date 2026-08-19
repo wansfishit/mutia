@@ -21,7 +21,7 @@ export const Footer = () => {
         </div>
 
         <p className="text-cute-text font-bold text-sm">
-          Dibuat dengan segenap rasa sayang oleh Tino khusus buat Mutia 💖
+          Dibuat dengan segenap rasa sayang dari aku khusus buat kamu 💖
         </p>
 
         <p className="text-[11px] text-cute-subtext font-medium">

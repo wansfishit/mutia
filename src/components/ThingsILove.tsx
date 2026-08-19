@@ -18,7 +18,7 @@ const initialNotes: CuteNote[] = [
     id: 1,
     emoji: '🍓',
     title: 'Senyum Manis Pas Ketemu',
-    desc: 'Ekspresi ceria kamu yang selalu berseri-seri tiap kali kita ketemu, langsung bikin hari Tino jadi bahagia dan penuh semangat.',
+    desc: 'Ekspresi ceria kamu yang selalu berseri-seri tiap kali kita ketemu, langsung bikin hari aku jadi bahagia dan penuh semangat.',
     bgColor: 'bg-[#FFF0F5]',
     borderColor: 'border-[#FFB6C1]',
     likes: 28,
@@ -54,7 +54,7 @@ const initialNotes: CuteNote[] = [
     id: 5,
     emoji: '🍯',
     title: 'Tempat Curhat Ternyaman',
-    desc: 'Selalu sabar dan ada buat dengerin semua cerita Tino, dari yang penting sampai yang receh tanpa pernah bosen.',
+    desc: 'Selalu sabar dan ada buat dengerin semua cerita aku, dari yang penting sampai yang receh tanpa pernah bosen.',
     bgColor: 'bg-[#EBFBEE]',
     borderColor: 'border-[#B2F2BB]',
     likes: 39,
@@ -97,7 +97,7 @@ export const ThingsILove = () => {
           Kebiasaan Gemes yang <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Bikin Sayang</span> ✨
         </h2>
         <p className="text-xs sm:text-sm text-cute-subtext font-medium max-w-md mx-auto">
-          Tingkah-tingkah lucu kamu yang selalu bikin Tino senyum-senyum sendiri tiap hari!
+          Tingkah-tingkah lucu kamu yang selalu bikin aku senyum-senyum sendiri tiap hari!
         </p>
       </div>
 

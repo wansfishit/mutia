@@ -14,7 +14,7 @@ export const PlayfulProposal = () => {
     'Wleee gak kena! 🏃‍♂️💨',
     'Tombolnya ngambek wkwk',
     'Pencet yang kiri aja sayang! 🥰',
-    'Gak boleh nolak cinta Tino! 🥺',
+    'Gak boleh nolak cinta aku! 🥺',
     'Harus pilih Mau Banget dong! 💖',
   ];
 
@@ -63,7 +63,7 @@ export const PlayfulProposal = () => {
             </div>
 
             <h2 className="text-2xl sm:text-3xl font-heading font-extrabold text-cute-text mb-2">
-              Mutia mau terus sama Tino selamanya kan? 🥺🎀
+              Mutia mau terus sama aku selamanya kan? 🥺🎀
             </h2>
             <p className="text-xs sm:text-sm text-cute-subtext font-medium max-w-xs mx-auto mb-8">
               Bahagia bareng, jajan bareng, dan lewatin semua cerita berdua!
@@ -117,11 +117,11 @@ export const PlayfulProposal = () => {
             </h3>
 
             <p className="text-sm font-cute text-2xl text-pastel-hot font-bold">
-              Janji Tino untuk selalu jaga dan bahagiain kamu selamanya.
+              Janji aku untuk selalu jaga dan bahagiain kamu selamanya.
             </p>
 
             <p className="text-xs text-cute-subtext font-medium max-w-xs mx-auto leading-relaxed">
-              Makasih yaa sudah memilih untuk terus melangkah bareng Tino. Kamu adalah kebahagiaan terindah buat Tino! 🥰
+              Makasih yaa sudah memilih untuk terus melangkah bareng aku. Kamu adalah kebahagiaan terindah buat aku! 🥰
             </p>
           </div>
         )}

@@ -60,7 +60,7 @@ export const CuteIntroGate: React.FC<CuteIntroGateProps> = ({ onEnter }) => {
             {/* Top Badge */}
             <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-pastel-soft border border-pastel-rose text-xs font-bold text-pastel-hot mb-5 animate-bounce-slow">
               <Sparkles className="w-3.5 h-3.5 text-amber-500 animate-spin-cute" />
-              <span>Surat Spesial Dari Tino</span>
+              <span>Pesan Spesial Buat Kamu</span>
             </div>
 
             {/* Cute Animated Couple Avatar with Bouncing Gift/Envelope */}
@@ -89,7 +89,7 @@ export const CuteIntroGate: React.FC<CuteIntroGateProps> = ({ onEnter }) => {
             </h1>
 
             <p className="text-xs sm:text-sm text-cute-subtext font-medium leading-relaxed mb-6">
-              Ada kumpulan cerita manis dan pesan penuh cinta dari Tino. Buka bareng lagu kesukaan kita yuk! 🥰
+              Ada kumpulan cerita manis dan pesan penuh cinta dari aku. Buka bareng lagu kesukaan kita yuk! 🥰
             </p>
 
             {/* Action Buttons: Play Music & Enter */}
@@ -113,7 +113,7 @@ export const CuteIntroGate: React.FC<CuteIntroGateProps> = ({ onEnter }) => {
             </div>
 
             <p className="text-[11px] text-cute-subtext/70 mt-3 font-medium">
-              Made with endless love by Tino for Mutia ✨
+              Dibuat penuh cinta khusus untuk Mutia ✨
             </p>
           </motion.div>
         </motion.div>

@@ -24,7 +24,7 @@ export const LoveLetter = () => {
   };
 
   const copyForWhatsApp = () => {
-    const text = `Balasan Manis dari Mutia buat Tino 💖:\n\n"${replyText}"\n\n(Dikirim dari Web Spesial Kita ✨)`;
+    const text = `Balasan Manis dari Mutia 💖:\n\n"${replyText}"\n\n(Dikirim dari Web Spesial Kita ✨)`;
     navigator.clipboard.writeText(text);
     setIsCopied(true);
     setTimeout(() => setIsCopied(false), 2500);
@@ -39,7 +39,7 @@ export const LoveLetter = () => {
           <span>Surat Cinta Buat Mutia 💌</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-heading font-extrabold text-cute-text mb-2">
-          Pesan Manis Dari <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Tino</span> 🌸
+          Pesan Manis Untuk <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Mutia</span> 🌸
         </h2>
       </div>
 
@@ -61,11 +61,11 @@ export const LoveLetter = () => {
           </p>
 
           <p>
-            Makasih banyak yaa sudah selalu hadir di hidup Tino dengan senyuman paling manis dan sifat kamu yang selalu bikin gemes setiap hari.
+            Makasih banyak yaa sudah selalu hadir di hidup aku dengan senyuman paling manis dan sifat kamu yang selalu bikin gemes setiap hari.
           </p>
 
           <p>
-            Tino bersyukur banget punya pacar sebaik, sepeduli, dan secantik kamu. Walaupun kadang kita suka debat receh soal mau makan apa (yang ujungnya terserah wkwk), tapi setiap detik bareng kamu selalu jadi momen paling bahagia buat Tino.
+            Aku bersyukur banget punya pacar sebaik, sepeduli, dan secantik kamu. Walaupun kadang kita suka debat receh soal mau makan apa (yang ujungnya terserah wkwk), tapi setiap detik bareng kamu selalu jadi momen paling bahagia buat aku.
           </p>
 
           <p>
@@ -73,7 +73,7 @@ export const LoveLetter = () => {
           </p>
 
           <div className="pt-4 flex items-center justify-between border-t-2 border-dashed border-pastel-soft text-xs font-bold text-cute-subtext">
-            <span>Peluk erat dari jauh,</span>
+            <span>Dari yang selalu sayang kamu,</span>
             <span className="font-cute text-3xl text-pastel-hot font-bold">Tino ❤️</span>
           </div>
         </div>
@@ -94,7 +94,7 @@ export const LoveLetter = () => {
             <textarea
               rows={3}
               required
-              placeholder="Contoh: Makasih ya Tino pacar ganteng, aku juga sayang banget sama kamu! 🥰"
+              placeholder="Contoh: Makasih ya sayang, aku juga sayang banget sama kamu! 🥰"
               value={replyText}
               onChange={(e) => setReplyText(e.target.value)}
               className="w-full p-3.5 rounded-2xl bg-pastel-soft/50 border-2 border-pastel-rose/50 text-cute-text text-xs sm:text-sm placeholder-cute-subtext/60 focus:outline-none focus:border-pastel-hot"
@@ -120,7 +120,7 @@ export const LoveLetter = () => {
                 className="text-xs px-4 py-2 rounded-xl bg-green-500 hover:bg-green-600 text-white font-bold flex items-center gap-1.5 shadow-sm transition-colors"
               >
                 {isCopied ? <Check className="w-3.5 h-3.5" /> : <Copy className="w-3.5 h-3.5" />}
-                <span>{isCopied ? 'Tersalin!' : 'Salin Buat Kirim ke WA Tino 📲'}</span>
+                <span>{isCopied ? 'Tersalin!' : 'Salin Buat Kirim ke WhatsApp 📲'}</span>
               </button>
               <button
                 onClick={() => setIsSent(false)}

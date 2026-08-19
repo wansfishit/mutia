@@ -97,7 +97,7 @@ export const HeroSection = () => {
           {/* Cute Sticker Caption */}
           <div className="mt-4 text-center">
             <span className="inline-block bg-white border-2 border-pastel-rose/60 text-cute-subtext text-xs font-bold px-3 py-1 rounded-full shadow-sm">
-              ✨ Definisi Bidadari Gemes Tino ✨
+              ✨ Bidadari Paling Cantik &amp; Gemes ✨
             </span>
           </div>
         </div>
@@ -115,7 +115,7 @@ export const HeroSection = () => {
           </h1>
 
           <p className="text-sm sm:text-base text-cute-subtext leading-relaxed max-w-lg mb-6 font-medium">
-            Ruang kecil untuk menyimpan setiap senyum, tawa, dan cerita perjalanan kita berdua. Makasih ya sudah selalu jadi bagian terindah di hidup Tino. 🥰
+            Ruang kecil untuk menyimpan setiap senyum, tawa, dan cerita perjalanan kita berdua. Makasih ya sudah selalu jadi bagian terindah di hidup aku. 🥰
           </p>
 
           {/* Cute Interactive Gemes Meter */}

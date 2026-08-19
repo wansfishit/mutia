@@ -17,7 +17,7 @@ const initialVouchers: CuteVoucher[] = [
     id: 'v1',
     emoji: '🍦',
     title: 'Kupon Traktir Jajan Bebas',
-    desc: 'Mutia bebas pilih es krim, seblak, boba, atau makanan manis apa aja. Tino yang bayar!',
+    desc: 'Mutia bebas pilih es krim, seblak, boba, atau makanan manis apa aja. Aku yang bayar!',
     color: 'from-[#FFE3EC] to-[#FFCCD5]',
     claimed: false,
   },
@@ -33,7 +33,7 @@ const initialVouchers: CuteVoucher[] = [
     id: 'v3',
     emoji: '👑',
     title: 'Kupon Ratu Sehari',
-    desc: 'Tino nurut 100% seharian tanpa protes! Mau minta anter atau suruh apa aja siap laksanakan.',
+    desc: 'Aku nurut 100% seharian tanpa protes! Mau minta anter atau suruh apa aja siap laksanakan.',
     color: 'from-[#F3E8FF] to-[#E9D5FF]',
     claimed: false,
   },
@@ -85,7 +85,7 @@ export const CoupleVouchers = () => {
           Kupon Cinta <span className="text-pastel-hot underline decoration-wavy decoration-pastel-rose">Gratis Seumur Hidup</span> 💖
         </h2>
         <p className="text-xs sm:text-sm text-cute-subtext font-medium max-w-md mx-auto">
-          Tinggal klik klaim kuponnya kapanpun Mutia mau pakai ke Tino yaa!
+          Tinggal klik klaim kuponnya kapanpun Mutia mau pakai ke aku yaa!
         </p>
       </div>
 
