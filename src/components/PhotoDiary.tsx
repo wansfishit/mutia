@@ -37,36 +37,72 @@ const photoCards: CutePhoto[] = [
     image: '/photos/IMG_2384.JPG',
     title: 'Kacamata Ulang Tahun 🎂🎉',
     sticker: '🎂',
-    note: 'Momen seru ngerayain ulang tahun bareng Mutia! Pakai kacamata Happy Birthday yang gemesin banget, selalu ada kejutan dan tawa tiap bareng kamu. 🥰✨',
+    note: 'Momen seru ngerayain ulang tahun bareng Mutia! Pakai kacamata Happy Birthday yang gemesin banget, selalu ada tawa tiap bareng kamu.',
     rotation: '-rotate-1',
     tapeColor: 'bg-pastel-lavender/80',
   },
   {
     id: '4',
+    image: '/photos/IMG_2403.JPG',
+    title: 'Buket Mawar Biru 💐💙',
+    sticker: '💐',
+    note: 'Kejutan buket mawar biru spesial buat Kharisma Mutia tersayang! Senyum bahagia kamu waktu itu selalu jadi momen paling berharga buat Tino.',
+    rotation: 'rotate-2',
+    tapeColor: 'bg-sky-200/80',
+  },
+  {
+    id: '5',
+    image: '/photos/IMG_0275.JPG',
+    title: 'Nyender Manja di Bahu 🥰',
+    sticker: '🧸',
+    note: 'Pose gemes Mutia yang suka nyender manja di bahu. Momen simpel yang selalu bikin hati tenang dan penuh rasa syukur.',
+    rotation: '-rotate-2',
+    tapeColor: 'bg-pastel-peach/80',
+  },
+  {
+    id: '6',
+    image: '/photos/IMG_6493.jpg',
+    title: 'Berdua di Bawah Payung ☂️🌙',
+    sticker: '✨',
+    note: 'Duduk berdua di bawah payung waktu malam. Kepala kamu nyender di bahu, suasana adem yang selalu bikin kangen.',
+    rotation: 'rotate-3',
+    tapeColor: 'bg-indigo-200/80',
+  },
+  {
+    id: '7',
+    image: '/photos/IMG_0977.jpg',
+    title: 'Candid Estetik 🌴✨',
+    sticker: '🌿',
+    note: 'Muka candid Mutia yang tetap manis banget dari samping. Mau candid ataupun sengaja difoto, cantiknya gak pernah luntur!',
+    rotation: '-rotate-1',
+    tapeColor: 'bg-pastel-mint/80',
+  },
+  {
+    id: '8',
     image: '/photos/IMG_6520.jpg',
     title: 'Nongkrong Santai ☕',
     sticker: '🌙',
     note: 'Night chill di kafe berdua. Ngobrolin ribuan hal receh sampai lupa waktu saking nyamannya.',
-    rotation: 'rotate-3',
+    rotation: 'rotate-2',
     tapeColor: 'bg-pastel-peach/80',
   },
   {
-    id: '5',
+    id: '9',
     image: '/photos/IMG_3733.JPG',
     title: 'Mirror Selfie Wajib 🪞',
-    sticker: '🧸',
+    sticker: '🎀',
     note: 'Ritual foto wajib di kaca setiap kali ketemu, biar galerinya penuh sama muka cantik Mutia.',
     rotation: '-rotate-3',
-    tapeColor: 'bg-pastel-mint/80',
+    tapeColor: 'bg-pastel-rose/80',
   },
   {
-    id: '6',
+    id: '10',
     image: '/photos/IMG_8753.JPG',
-    title: 'Dua Senyuman Manis 🥰',
-    sticker: '💖',
+    title: 'Dua Senyuman Manis 💖',
+    sticker: '🥰',
     note: 'Senyum paling bahagia! Makasih ya Sayang udah selalu jadi alasan Tino tersenyum setiap hari.',
     rotation: 'rotate-1',
-    tapeColor: 'bg-pastel-rose/80',
+    tapeColor: 'bg-pastel-yellow/80',
   },
 ];
 
@@ -83,7 +119,7 @@ export const PhotoDiary = () => {
   };
 
   return (
-    <section id="gallery" className="py-16 px-4 sm:px-6 max-w-4xl mx-auto">
+    <section id="gallery" className="py-16 px-4 sm:px-6 max-w-5xl mx-auto">
       {/* Section Title */}
       <div className="text-center mb-12">
         <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-white border-2 border-pastel-rose/60 text-xs font-bold text-pastel-hot mb-3 shadow-sm animate-bounce-slow">
@@ -99,7 +135,7 @@ export const PhotoDiary = () => {
       </div>
 
       {/* Grid of Polaroid Cards */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-6 pt-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8 sm:gap-6 pt-2">
         {photoCards.map((photo) => (
           <div
             key={photo.id}
