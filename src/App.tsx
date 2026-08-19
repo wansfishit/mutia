@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { CuteIntroGate } from './components/CuteIntroGate';
 import { CuteBackground } from './components/CuteBackground';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
@@ -10,8 +12,15 @@ import { Footer } from './components/Footer';
 import { FloatingMusicPlayer } from './components/FloatingMusicPlayer';
 
 export function App() {
+  const [hasEntered, setHasEntered] = useState(false);
+
   return (
     <div className="relative min-h-screen bg-[#FFF2F5] text-cute-text selection:bg-pastel-hot selection:text-white font-sans overflow-x-hidden">
+      {/* Intro Modal / Gate before entering main site */}
+      {!hasEntered && (
+        <CuteIntroGate onEnter={() => setHasEntered(true)} />
+      )}
+
       {/* Floating Animated Pastel Doodles & Hearts */}
       <CuteBackground />
 
